@@ -9,6 +9,10 @@ dist/
 web-build/
 expo-env.d.ts
 
+# Firebase emulator logs
+*.log
+.firebase/
+
 # Native
 .kotlin/
 *.orig.*
@@ -31,7 +35,15 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+
+# Architecture docs stay on this machine
+docs/diagrams/
+docs/tech-stack.md
+docs/skills.md
+docs/guardrails.md
+docs/changelog.md
 
 # typescript
 *.tsbuildinfo

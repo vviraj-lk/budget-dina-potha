@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "MoneyDiary-tmp",
-    "slug": "MoneyDiary-tmp",
+    "name": "Budget Dina Potha",
+    "slug": "budget-dina-potha",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
@@ -18,7 +18,10 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png",
+      "name": "Budget Dina Potha"
     }
   }
 }

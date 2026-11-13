@@ -1,18 +1,29 @@
 {
-  "name": "moneydiary-tmp",
+  "name": "budget-dina-potha",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
     "expo": "~58.0.25",
     "expo-status-bar": "~58.0.5",
+    "firebase": "^13.3.0",
     "react": "19.3.0",
-    "react-native": "0.88.1"
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-web": "^0.21.4"
   },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "export:web": "expo export --platform web",
+    "test": "node --test test/money.test.mjs test/messages.test.mjs test/document.test.mjs test/theme.test.mjs",
+    "test:integrate": "firebase emulators:exec --only firestore \"node --test test/integrate.test.mjs\""
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^6.0.0",
+    "firebase-tools": "^15.36.0"
+  }
 }
